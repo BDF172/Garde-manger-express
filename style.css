@@ -1,4 +1,122 @@
 body{
 	font-family:'OCR A Std', monospace;
-	background:#DCFCEC;
+	background: #DCFCEC url('nayxocolis.png') center center fixed; 
+    background-size: cover;
+    margin: 0;
+}
+
+#titre {
+	position: fixed;
+	top:0%;
+  
+	margin-top: -2.5em;
+  }
+  
+  .header {
+	font-family:'OCR A Std', monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background:rgba(220, 252, 236, 0);
+	color : white;
+    z-index: 1000;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+  .box1 {
+
+
+	background : #71FAB6;
+	color : white;
+    padding: 15px;
+	margin-left: 20px;
+    margin-right: 20px; 
+    z-index: 1000;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    display: flex;
+	border: 0px solid black;
+	flex-direction: row;
+}
+.boxTITLE{
+
+	border: 0px solid rgb(0, 0, 0);
+	width: 100%;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Boxbuttonconn{
+	margin-top:40px;
+	display: flex;
+	border: 0px solid black;
+	flex-direction: row;
+	border: 0px solid rgb(0, 0, 0);
+
+}
+
+.contentbox{
+	background:rgba(220, 252, 236, 0.5);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-left: 20px;
+    margin-right: 20px;
+	margin-top: 142px;
+
+}
+
+.buttonconn{
+	border-radius:10px;
+	background-color: #04AA6D;
+	padding:10px;
+	margin:5px;
+	color:white;
+	border-color: white;
+	font-size: 15;
+
+}
+
+.deco1box{
+	color:#024453;
+	
+}
+
+
+.product-catalog {
+    padding: 20px;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #71FAB6;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #2C7A7B;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.boxproduits{
+	border: 0px solid rgb(0, 0, 0);
+	width: 71%;
 }
