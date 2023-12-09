@@ -1,50 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Garde-Manger Express</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="GME.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap">
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="GME.png">
+    <title>Garde-Manger Express</title>
 </head>
+
 <body>
-    <header class = "header">
-        <div class = "box1">
+    <header class="header">
+        <div class="box1">
             <div class="container">
                 <div>
-                    <img src="logo.png", width="120px">
+                    <img src="logo.png" alt="Logo" width="120px">
                 </div>
                 <div class="boxTITLE">
                     <center>
-                    <H1>Bienvenue chez Garde-Manger Express</h1>
-                    <p>Affrontons le déluge pour des kinder Bueno</p>
+                        <h1>Bienvenue chez Garde-Manger Express</h1>
+                        <p>Affrontons le déluge pour des Kinder Bueno</p>
                     </center>
                 </div>
             </div>
-
         </div>
-
     </header>
 
-
-<div class="contentbox">
-    <div class="deco1box">
-        <center>
-        <h1>Commandez et recevez votre nourriture livrée</h1>
-        </center>
-    </div>
-    <input type="text" id="searchInput" placeholder="Rechercher un produit">
-    <div class="boxproduits">
-        <div class="product-catalog">
-            <div class="products-container" id="productsContainer">
-                <!-- Liste de produits générée dynamiquement par JavaScript -->
+    <div class="contentbox">
+        <div class="deco1box">
+            <center>
+                <h1>Commandez et recevez votre nourriture livrée</h1>
+            </center>
+        </div>
+        <input type="text" id="searchInput" class="searchInput" placeholder="Rechercher un produit">
+        <div class="downbox">
+            <div class="boxproduits">
+                <div class="product-catalog">
+                    <div class="products-container" id="productsContainer">
+                        <!-- Liste de produits générée dynamiquement par JavaScript -->
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Panier en bas de la page -->
+        <div class="panier">
+            <p>Votre Panier</p>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
-</div>
-
-
 </body>
+
+</html>

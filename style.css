@@ -1,110 +1,88 @@
-body{
-	font-family:'OCR A Std', monospace;
-	background: #DCFCEC url('nayxocolis.png') center center fixed; 
+body {
+    font-family: 'OCR A Std', monospace;
+    background: #DCFCEC url('nayxocolis.png') center center fixed;
     background-size: cover;
     margin: 0;
 }
 
-#titre {
-	position: fixed;
-	top:0%;
-  
-	margin-top: -2.5em;
-  }
-  
-  .header {
-	font-family:'OCR A Std', monospace;
+.header {
+    font-family: 'OCR A Std', monospace;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-	background:rgba(220, 252, 236, 0);
-	color : white;
+    background: rgba(220, 252, 236, 0);
+    color: white;
     z-index: 1000;
-	border-top-left-radius: 0;
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-  .box1 {
-
-
-	background : #71FAB6;
-	color : white;
+.box1 {
+    background: #AFE5F1;
+    color: white;
     padding: 15px;
-	margin-left: 20px;
-    margin-right: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
     z-index: 1000;
-	border-top-left-radius: 0;
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  .container {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container {
     display: flex;
-	border: 0px solid black;
-	flex-direction: row;
-}
-.boxTITLE{
-
-	border: 0px solid rgb(0, 0, 0);
-	width: 100%;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 0px solid black;
+    flex-direction: row;
 }
 
-.Boxbuttonconn{
-	margin-top:40px;
-	display: flex;
-	border: 0px solid black;
-	flex-direction: row;
-	border: 0px solid rgb(0, 0, 0);
-
+.boxTITLE {
+    border: 0px solid rgb(0, 0, 0);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.contentbox{
-	background:rgba(220, 252, 236, 0.5);
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-	margin-left: 20px;
+.contentbox {
+    background: rgba(220, 252, 236, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
     margin-right: 20px;
-	margin-top: 142px;
-
+    margin-top: 142px;
 }
-
-.buttonconn{
-	border-radius:10px;
-	background-color: #04AA6D;
-	padding:10px;
-	margin:5px;
-	color:white;
-	border-color: white;
-	font-size: 15;
-
-}
-
-.deco1box{
-	color:#024453;
-	
-}
-
 
 .product-catalog {
     padding: 20px;
+    border: solid 0px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
 }
 
 .products-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .product {
-    background-color: #71FAB6;
+    background-color: #AFE5F1;
     color: white;
     padding: 15px;
     border-radius: 10px;
     width: 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -116,7 +94,79 @@ button {
     cursor: pointer;
     margin-top: 10px;
 }
-.boxproduits{
-	border: 0px solid rgb(0, 0, 0);
-	width: 71%;
+
+.downbox {
+    flex-direction: row;
 }
+
+.boxproduits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0px solid rgb(0, 0, 0);
+    width: 95%;
+    left:5%;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.productbutton {
+    background-color: #2C7A7B;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productbutton:hover {
+    box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.5);
+    transform: translateX(3px) translateY(-3px);
+}
+
+.searchInput {
+    position: relative;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #AFE5F1;
+    transition: width 0.6s ease, transform 0.3s ease, background-color 1s ease, position 0.1s ease;
+    margin-left: 70px;
+}
+
+.searchInput::placeholder {
+    color: #FFF;
+    transition: color 0.2s ease, text-shadow 0s;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.searchInput:focus {
+    position: sticky;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 460px;
+    transform: translateX(250px);
+    background-color: #FFF;
+}
+
+.searchInput:focus::placeholder {
+    color: #000;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+
+.panier {
+
+    position: fixed;
+    top:95%;
+    left:45%;
+    background-color: #AFE5F1;
+    border-radius: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    
+}
+
